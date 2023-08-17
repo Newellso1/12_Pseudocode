@@ -28,6 +28,28 @@
 
     // -- Code ---
 
+    let recipes = [
+      {
+        name:'Chips' ,
+        servings: 1,
+        ingredients: ['Potatoes', 'Dripping'],
+        directions: 'Chop tatties, lather in dripping, throw in oven'
+      },
+      {
+        name: 'Steak',
+        servings: 1,
+        ingredients: ['Steak', 'Butter'],
+        directions: 'Melt butter, Cook steak to preference'
+      },
+      {
+        name: 'Crisp Sandwich',
+        servings: 1,
+        ingredients: ['Crisps', 'Bread', 'Butter'],
+        directions: 'Butter Bread, Create Sandwich'
+      }
+    ]
+
+
     function ingredientList() {
       for (let i = 0; i < recipes.length; i++) {
         console.log(`${recipes[i].name}`);
