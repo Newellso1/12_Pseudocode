@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="#">
+  <title>Task 2B</title>
+</head>
+
+<body>
+
+  <script>
+    // --- Problem ---
+    // Keep track of which books you read and which books you want to read!
+    // Create a list of objects, where each object describes a book and has properties for the title (a string), author (a
+    // string), and already read (a boolean (true/false) indicating if you read it yet).
+    // Iterate (go through) through the array of books. For each book, log the book title and book author like so: “The
+    // Hobbit by J.R.R. Tolkien”.
+    // Modify the output based on whether the book’s been read: if so, log a string like ‘You already read “The Hobbit” by
+    // J.R.R. Tolkien’, and if not, log a string like ‘You still need to read “The Hobbit” by J.R.R. Tolkien.’
+
+    // --- Solution ---
+    // Create an Array that to hold book objects
+    //Create objects in array
+    // FOR to loop through the books and console log properties 
+    // IF to decide if read or not
+
+
+    // -- Code ---
+
+    bookList = [
+      {
+        name: "The Hobbit",
+        author: "J.R.R Tolkien",
+        read: true
+      },
+      {
+        name: "The Lord of the Rings",
+        author: "J.R.R Tolkien",
+        read: true
+      },
+      {
+        name: "JavaScript All-in-One For Dummies",
+        author: "The Dummies",
+        read: false
+      }
+
+    ];
+
+    function bookCheck() {
+      for (let i = 0; i < bookList.length; i++) {
+        if (bookList[i].read === true) {
+          console.log(`You have read ${bookList[i].name} by ${bookList[i].author} `)
+        } else {
+          console.log(`You still have to read ${bookList[i].name} by ${bookList[i].author} `)
+        }
+      }
+    };
+  </script>
+</body>
+
+</html>

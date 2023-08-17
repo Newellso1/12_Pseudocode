@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="#">
+  <title>Task 1</title>
+</head>
+
+<body>
+  <script>
+    // --- Problem ---
+    //Write a program that prints each number from 1 - 20 on a new line
+    // For each multiple of 3, print “Fizz” instead of the number
+    // For each multiple of 5, print “Buzz” instead of the number
+    // For numbers that are multiples of both 3 and 5 print “FizzBuzz” instead of the number
+
+
+    // --- Solution ---
+    // Loop to go through 1-20
+    //IF statement using % to check the multiples
+    // Console.log result 
+
+
+    // --- Code ---
+    function fizzBuzz() {
+      for (let i = 1; i <= 20; i++) {
+        if (i % 15 === 0) {
+          console.log(`${i} fizzbuzz`);
+        } else if (i % 5 === 0) {
+          console.log(`${i} fizz`)
+        } else if (i % 3 === 0) {
+          console.log(`${i} buzz`)
+        } else {
+          console.log(`${i}`)
+        }
+      }
+    }
+
+    fizzBuzz()
+  </script>
+</body>
+
+</html>

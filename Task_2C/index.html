@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="#">
+  <title>Task 2C</title>
+</head>
+
+<body>
+  <script>
+    // --- Problem ---
+    // Create an object to hold information on your favourite recipes. It should have properties for:
+    // recipeTitle (a string)
+    // servings (a number)
+    // ingredients (an array/list of strings)
+    // directions (a string)
+    // List all recipes
+    // Create a loop to list all the ingredients
+
+
+    // --- Solution ---
+    // Create array with recipes
+    // Each recipe object contains properties
+    // FOR to loop through each recipe
+    // Nest another FOR to loop through the ingredients
+
+    // -- Code ---
+
+    function ingredientList() {
+      for (let i = 0; i < recipes.length; i++) {
+        console.log(`${recipes[i].name}`);
+        for (let j = 0; j < recipes[i].ingredients.length; j++) {
+          console.log(` - ${recipes[i].ingredients[j]}`);
+        }
+      }
+    }
+
+
+
+  </script>
+</body>
+
+</html>

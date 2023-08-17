@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="#">
+  <title>Task 2A</title>
+</head>
+
+<body>
+  <script>
+    // --- Problem ---
+    // Create a function that takes a string value and replaces all letters after the firs
+    // that match the first with *
+
+
+    // --- Solution ---
+    // Slice to separate the first letter
+    // Split() to turn the remainder of the string into an array
+    // FOR to loop through array objects
+    // If statement to check value and change
+    // JOIN to merge array
+
+
+    // -- Code ---
+
+    function fixStart(word) {
+
+      let firstChar = word[0];
+      let remainder = word.slice(1).split('');
+      newWord = [firstChar];
+
+      for (let i = 0; i < remainder.length; i++) {
+        if (remainder[i] == firstChar) {
+          newWord.push('*');
+        } else {
+          newWord.push(remainder[i])
+        }
+      }
+
+      return newWord.join('');
+
+    }
+
+
+
+
+  </script>
+</body>
+
+</html>
